@@ -10,28 +10,66 @@
         button {
             width: 8rem;
             height: 2rem;
+            margin-top: 1rem;
         }
 
-        div {
-            width: 12rem;
+        .inner {
+            display: flex;
+            align-items: center;
+            width: 13rem;
             height: 2rem;
             border: 1px solid blue;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+            
+        }
+        .outer {
+            display: flex;
+            align-items: center;
+        }
+
+        h4 {
+            width: 15rem;
+
         }
     </style>
 
 </head>
 
 <body>
-    <div id="massiv"></div>
-    <div id="min"></div>
-    <div id="max"></div>
-    <div id="average"></div>
-    <div id="sum"></div>
-    <div id="mult"></div>
+    <h1>Генератор случайных чисел</h1>
+
+    <div class="outer">
+        <h4>Массив</h4>
+        <div class="inner" id="massiv"></div>
+    </div>
+
+    <div class="outer">
+        <h4>Минимальное число</h4>
+        <div class="inner" id="min"></div>
+    </div>
+
+    <div class="outer">
+        <h4>Максимальное число</h4>
+        <div class="inner" id="max"></div>
+    </div>
+
+    <div class="outer">
+        <h4>Среднее арифметическое</h4>
+        <div class="inner" id="average"></div>
+    </div>
+
+    <div class="outer">
+        <h4>Сумма</h4>
+        <div class="inner" id="sum"></div>
+    </div>
+
+    <div class="outer">
+        <h4>Произведение</h4>
+        <div class="inner" id="mult"></div>
+    </div>
     
-    <button></button>
+
+    
+    <button>Нажми меня</button>
     <script src="task4.js"></script>
 </body>
 </html>
