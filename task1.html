@@ -7,26 +7,41 @@
     <title>Task1</title>
 </head>
 <style>
-    input {
+    input,
+    button {
         margin: 1rem;
+    }
+
+    input {
+        height: 2rem;
+        width: 15rem;
     }
 
     button {
         width: 7rem;
         height: 2rem;
+        margin-left: 5rem;
+        background-color: rgb(128, 153, 199);
+        border-radius: 1rem;
+    }
+
+    .wrap {
+        display: flex;
     }
 </style>
 
 
 <body>
-    
-    <input placeholder="Введите ФИО" id="fullPerson"><br>
+    <div class="wrap">
+        <div>
+            <input placeholder="Введите ФИО" id="fullPerson"><br>
+            <input style="display: none;" id="surname" type="text"><br>
+            <input style="display: none;" id="name" type="text"><br>
+            <input style="display: none;" id="patronymic" type="text"><br>
+        </div>
 
-    <input style="display: none;" id="surname" type="text"><br>
-    <input style="display: none;" id="name" type="text"><br>
-    <input style="display: none;" id="patronymic" type="text"><br>
-
-    <button></button>
+        <button>Преобразуй!</button>
+    </div>
     
     <script src="task1.js"></script>
 </body>

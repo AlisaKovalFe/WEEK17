@@ -29,10 +29,13 @@ function transform() {
             patronymic.value = arr[2].slice(0, 1).toUpperCase() + arr[2].slice(1).toLowerCase() 
             console.log(patronymic.value)
         }
-    } 
-
-        
-    
+    } else {
+        fullPerson.style.display = 'block'
+        fullPerson.innerText = 'вы ничего не ввели'
+        surname.style.display = 'none'
+        person.style.display = 'none'
+        patronymic.style.display = 'none'
+    }
     
 }
 
