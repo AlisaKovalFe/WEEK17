@@ -8,11 +8,11 @@ let patronymic = document.querySelector('#patronymic')
 
 
 function transform() {
-
     let arrValue = fullPerson.value.trim()
     let arr = arrValue.split(' ')
     
-    if (fullPerson !== '') {
+
+    if (arrValue !== '') {
         fullPerson.style.display = 'none'
         surname.style.display = 'block'
         person.style.display = 'block'
@@ -29,14 +29,11 @@ function transform() {
             patronymic.value = arr[2].slice(0, 1).toUpperCase() + arr[2].slice(1).toLowerCase() 
             console.log(patronymic.value)
         }
+    } else if(Number(arrValue)) {
+        fullPerson.placeholder = 'вы ниче'
     } else {
-        fullPerson.style.display = 'block'
-        fullPerson.innerText = 'вы ничего не ввели'
-        surname.style.display = 'none'
-        person.style.display = 'none'
-        patronymic.style.display = 'none'
+        fullPerson.placeholder = 'вы ничего не ввели'
     }
-    
 }
 
 button.addEventListener('click', transform)
