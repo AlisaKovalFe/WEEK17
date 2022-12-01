@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+
+    <style>
+        h1 {
+            margin-bottom: 2rem;
+        }
+
+        .warp {
+            display: flex;
+            flex-direction: column;
+            width: 50rem;
+        }
+
+        button {
+            margin-top: 2rem;
+            
+            width: 10rem;
+            height: 2rem;
+        }
+
+        .inner {            
+            border: 1px solid grey;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        } 
+
+        #container {
+            font-size: 1.5rem;
+            margin-bottom: 5rem;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="warp">
+        <h1>Оставь свой комментарий</h1>
+
+        <div id="container"><em>Тут будут ваши комментарии</em> </div>
+    
+        <textarea name="" id="newText" rows="10" placeholder="напиши здесь коментарий" ></textarea>
+        <button>Отправить</button>
+    </div>
+
+    <script src="./task2.js"></script>
+</body>
+</html>

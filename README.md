@@ -50,6 +50,10 @@ if (personaName == '') {
     console.log(personaName[0].toLocaleUpperCase()  + personaName.slice(1))
 }
 
+5. 
+let date = new Date(2021, 0, 24, 22, 51)
+console.log(date);
+
 7. использовать parseInt возвращает целое число
 
 let str = '120р.'
