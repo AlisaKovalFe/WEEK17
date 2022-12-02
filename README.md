@@ -54,6 +54,18 @@ if (personaName == '') {
 let date = new Date(2021, 0, 24, 22, 51)
 console.log(date);
 
+6. Сколько секуд осталось до завтра
+
+function getSecondsToTomorrow() {
+    let date = new Date()
+    let tommorow = new Date(date.getFullYear(), date.getMonth(), date.getDate() + 1)
+    let diff = Math.round((tommorow - date)/1000)
+
+    return diff
+}
+
+console.log(getSecondsToTomorrow());
+
 7. использовать parseInt возвращает целое число
 
 let str = '120р.'
@@ -79,8 +91,22 @@ console.log(greet1.join(', '))
 9. Math.round = математическое окургление
 Округление до ближайшего целого: 3.1 становится 3, 3.6 — 4, а -1.1 — -1.
 
+10. Генерация слуайного числа от 0 до 100
+let num = Math.round(Math.random()*100)
+console.log(num)
+
 11. str.trim() — убирает пробелы в начале и конце строки
 
 Пример: 
 let massiv2 = '    Apple, Tomato      '
 // console.log(massiv2.trim()) // лишних пробелов в начале и концы строки не будет
+
+12. Флаги могут использовать в регулярных выражениях.
+Регулярные выражения – средство поиска и замены в строке. Регулярное выражение состоит из шаблона и необязательных флагов.
+
+Например:
+i - с этим флагом поиск не зависит от регистра: нет разницы между A и a 
+g - с этим флагом поиск ищет все совпадения, без него – только первое.
+
+let str = 'Hi and again hi'
+console.log(str.replace(/hi/gi, 'bye'))

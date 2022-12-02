@@ -135,11 +135,37 @@
 
 // console.log(getLastDayOfMonth(2019, 01))
 
-function getDateAgo(date, n) {
-    date = new Date()
+// function getDateAgo(date, n) {
+//     date = new Date()
     
-    return date.getDate() - n
+//     return date.getDate() - n
+// }
+
+
+// console.log(getDateAgo(20, 1))
+
+// let num = Math.round(Math.random()*100)
+// console.log(num)
+
+// let str = 'Hi and again hi'
+// console.log(str.replace(/hi/gi, 'bye'))
+
+
+
+// let date1= new Date(2016, 1, 28);
+// date1.setDate(date1.getDate() + 2);
+
+// console.log(date1); // 1 Mar 2016
+
+
+function getSecondsToTomorrow() {
+    let date = new Date()
+    let tommorow = new Date(date.getFullYear(), date.getMonth(), date.getDate() + 1)
+    let diff = Math.round((tommorow - date)/1000)
+
+    return diff
 }
 
+console.log(getSecondsToTomorrow());
 
-console.log(getDateAgo(20, 1))
+
