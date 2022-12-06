@@ -12,7 +12,33 @@ function transform() {
     let arr = arrValue.split(' ')
     
 
-    if (arrValue !== '') {
+    // if (arrValue !== '') {
+    //     fullPerson.style.display = 'none'
+    //     surname.style.display = 'block'
+    //     person.style.display = 'block'
+    //     patronymic.style.display = 'block'
+    //     for (let i = 0; i < arr.length; i++) {
+    //         surname.value = arr[0].slice(0, 1).toUpperCase() + arr[0].slice(1).toLowerCase() 
+    //         console.log(surname.value)
+    //     }
+    //     for (let i = 0; i < arr.length; i++) {
+    //         person.value = arr[1].slice(0, 1).toUpperCase() + arr[1].slice(1).toLowerCase() 
+    //         console.log(person.value)
+    //     }
+    //     for (let i = 0; i < arr.length; i++) {
+    //         patronymic.value = arr[2].slice(0, 1).toUpperCase() + arr[2].slice(1).toLowerCase() 
+    //         console.log(patronymic.value)
+    //     }
+    // } else if(Number(arrValue)) {
+    //     fullPerson.value = 'это число'
+    // } else {
+    //     fullPerson.placeholder = 'вы ничего не ввели'
+    // }
+
+
+    if (Number(arrValue)) {
+        fullPerson.value = 'это число'
+    } else if(arrValue !== '') {
         fullPerson.style.display = 'none'
         surname.style.display = 'block'
         person.style.display = 'block'
@@ -29,11 +55,10 @@ function transform() {
             patronymic.value = arr[2].slice(0, 1).toUpperCase() + arr[2].slice(1).toLowerCase() 
             console.log(patronymic.value)
         }
-    } else if(Number(arrValue)) {
-        fullPerson.placeholder = 'вы ниче'
     } else {
         fullPerson.placeholder = 'вы ничего не ввели'
     }
+
 }
 
 button.addEventListener('click', transform)
